@@ -6,12 +6,12 @@
 //  Copyright (c) 2015 John Wallace. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class User: Entity {
     var name: String?
     var email: String?
-    var image: String?
+    var image: UIImage?
     
     class func loadData() {
         let path = NSBundle.mainBundle().pathForResource("users", ofType: "json", inDirectory: nil)
@@ -21,9 +21,7 @@ class User: Entity {
             user.id = userData["id"] as? NSNumber
             user.name = userData["name"] as? String
             user.email = userData["email"] as? String
-            user.image = userData["image"] as? String
-            //            event.start = eventData["id"]
-            //            event.end = eventData["id"]
+            user.image = UIImage(named: (userData["image"] as? String)!)
             
             all.append(user)
         }

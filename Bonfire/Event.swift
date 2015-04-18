@@ -38,6 +38,10 @@ class Event: GroupEvent {
     }
     
     private class func loadEvents() {
+        let dateFormatter = NSDateFormatter();
+        dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm'"
+        dateFormatter.timeZone = NSTimeZone(forSecondsFromGMT:0)
+
         let path = NSBundle.mainBundle().pathForResource("events", ofType: "json", inDirectory: nil)
         let eventsData = NSJSONSerialization.loadFromPath(path!, error: nil) as! [[String: AnyObject]]
         for eventData in eventsData {
@@ -45,8 +49,8 @@ class Event: GroupEvent {
             event.id = eventData["id"] as? NSNumber
             event.name = eventData["name"] as? String
             event.address = eventData["address"] as? String
-//            event.start = eventData["id"]
-//            event.end = eventData["id"]
+            event.start = dateFormatter.dateFromString((eventData["event_start"] as? String)!)
+            event.end = dateFormatter.dateFromString((eventData["event_end"] as? String)!)
             
             all.append(event)
         }
