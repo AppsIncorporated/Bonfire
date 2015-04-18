@@ -14,8 +14,10 @@ class Entity: NSObject {
     var id: NSNumber?
     
     class var all: [Entity] {
+        // Use associated objects bound to the class objects so that each subclass 
+        // of Entity has its own 'all' array. NOTE: this binds to the leaf class, so
+        // if you have a subclass of a subclass, it will have a different 'all' array
         get {
-            let key = unsafeAddressOf(self)
             var values = objc_getAssociatedObject(self, unsafeAddressOf(allKey)) as! [Entity]?
             if values == nil {
                 values = []
