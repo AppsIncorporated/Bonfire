@@ -9,12 +9,15 @@
 import UIKit
 
 class EventTableViewController: UITableViewController {
+    
+    var events: [Event]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let cellNib = UINib(nibName: "EventTableViewCell", bundle: nil)
         tableView.registerNib(cellNib, forCellReuseIdentifier: "eventTableViewCell")
+        events = Event.all as! [Event]
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,15 +26,16 @@ class EventTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return events.count
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 400.0
+        return 250.0
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("eventTableViewCell") as! EventTableViewCell
+        cell.eventView.groupEvent = events[indexPath.item]
         return cell
     }
 

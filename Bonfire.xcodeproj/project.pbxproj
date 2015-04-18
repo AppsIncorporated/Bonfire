@@ -30,6 +30,7 @@
 		728BBEDB1AE2C782006FDFFB /* PersonCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728BBEDA1AE2C782006FDFFB /* PersonCellView.xib */; };
 		728BBEDD1AE2F022006FDFFB /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728BBEDC1AE2F022006FDFFB /* EventTableViewCell.xib */; };
 		728BBEDF1AE2F03A006FDFFB /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728BBEDE1AE2F03A006FDFFB /* EventTableViewCell.swift */; };
+		72AC635F1AE30DAB00B8EEDA /* GroupEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC635E1AE30DAB00B8EEDA /* GroupEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		728BBEDA1AE2C782006FDFFB /* PersonCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonCellView.xib; sourceTree = "<group>"; };
 		728BBEDC1AE2F022006FDFFB /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		728BBEDE1AE2F03A006FDFFB /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		72AC635E1AE30DAB00B8EEDA /* GroupEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				52C9724F1AE2F70A000C531A /* Entity.swift */,
+				72AC635E1AE30DAB00B8EEDA /* GroupEvent.swift */,
 				52C972501AE2F70A000C531A /* Event.swift */,
 				52C972511AE2F70A000C531A /* Group.swift */,
 				52C972521AE2F70A000C531A /* User.swift */,
@@ -301,6 +304,7 @@
 				52DC1A2F1AE2A6490011140F /* GroupTableViewController.swift in Sources */,
 				52C972531AE2F70A000C531A /* Entity.swift in Sources */,
 				52DC1A2B1AE2A6490011140F /* AppDelegate.swift in Sources */,
+				72AC635F1AE30DAB00B8EEDA /* GroupEvent.swift in Sources */,
 				52C972581AE2F714000C531A /* NSJSONSerialization+NSData.swift in Sources */,
 				52DC1A2D1AE2A6490011140F /* EventTableViewController.swift in Sources */,
 				728BBED91AE2C63E006FDFFB /* PersonCellView.swift in Sources */,

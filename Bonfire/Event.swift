@@ -10,13 +10,13 @@ import Foundation
 
 private var userEventJoinTable:[[String: NSNumber]]!
 
-class Event: Entity {
+class Event: GroupEvent {
     var name: String?
     var address: String?
     var start: NSDate?
     var end: NSDate?
     
-    var attendees: [User]? {
+    override var users: [User]! {
         var users: [User] = []
         for entry in userEventJoinTable {
             if entry["event_id"] == self.id {
@@ -32,9 +32,9 @@ class Event: Entity {
         loadEvents()
         loadUsersForEvents()
         
-//        for event in self.all as! [Event] {
-//            NSLog("event \(event.name) users \(event.attendees)")
-//        }
+        for event in self.all as! [Event] {
+            NSLog("\nevent \(event.name) users \(event.users)")
+        }
     }
     
     private class func loadEvents() {

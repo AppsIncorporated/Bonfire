@@ -12,7 +12,8 @@ extension NSJSONSerialization {
     
     class func loadFromPath(filePath: String, error: NSErrorPointer) -> AnyObject? {
         let data = NSData(contentsOfFile:filePath)
-        return NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: error)
+        let result = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: error)
+        return result
     }
     
 }

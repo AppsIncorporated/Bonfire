@@ -10,11 +10,11 @@ import Foundation
 
 private var userGroupJoinTable:[[String: NSNumber]]!
 
-class Group: Entity {
+class Group: GroupEvent {
     var name: String?
     var keywords: String?
 
-    var users: [User]? {
+    override var users: [User]! {
         var users: [User] = []
         for entry in userGroupJoinTable {
             if entry["group_id"] == self.id {
@@ -30,9 +30,9 @@ class Group: Entity {
         loadGroups()
         loadUsersForGroups()
         
-//        for group in self.all as! [Group] {
-//            NSLog("group \(group.name) users \(group.users)")
-//        }
+        for group in self.all as! [Group] {
+            NSLog("\ngroup \(group.name) users \(group.users)")
+        }
     }
     
     private class func loadGroups() {
@@ -43,7 +43,6 @@ class Group: Entity {
             group.id = groupData["id"] as? NSNumber
             group.name = groupData["name"] as? String
             group.keywords = groupData["keywords"] as? String
-            
             all.append(group)
         }
     }
