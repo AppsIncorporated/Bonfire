@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  Bonfire
 //
 //  Created by John Wallace on 4/18/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EventTypesViewController: UIViewController {
+class GroupsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
