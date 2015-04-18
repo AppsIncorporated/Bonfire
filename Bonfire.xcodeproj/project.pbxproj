@@ -16,6 +16,8 @@
 		52DC1A431AE2A6490011140F /* BonfireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC1A421AE2A6490011140F /* BonfireTests.swift */; };
 		728BBEA31AE2B965006FDFFB /* EventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728BBEA21AE2B965006FDFFB /* EventView.xib */; };
 		728BBEA51AE2B981006FDFFB /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728BBEA41AE2B981006FDFFB /* EventView.swift */; };
+		728BBED91AE2C63E006FDFFB /* PersonCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728BBED81AE2C63E006FDFFB /* PersonCellView.swift */; };
+		728BBEDB1AE2C782006FDFFB /* PersonCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728BBEDA1AE2C782006FDFFB /* PersonCellView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		52DC1A421AE2A6490011140F /* BonfireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonfireTests.swift; sourceTree = "<group>"; };
 		728BBEA21AE2B965006FDFFB /* EventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventView.xib; sourceTree = "<group>"; };
 		728BBEA41AE2B981006FDFFB /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		728BBED81AE2C63E006FDFFB /* PersonCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCellView.swift; sourceTree = "<group>"; };
+		728BBEDA1AE2C782006FDFFB /* PersonCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonCellView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 				52DC1A2E1AE2A6490011140F /* GroupMembersViewController.swift */,
 				728BBEA21AE2B965006FDFFB /* EventView.xib */,
 				728BBEA41AE2B981006FDFFB /* EventView.swift */,
+				728BBED81AE2C63E006FDFFB /* PersonCellView.swift */,
+				728BBEDA1AE2C782006FDFFB /* PersonCellView.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 			files = (
 				52DC1A321AE2A6490011140F /* Main.storyboard in Resources */,
 				52DC1A371AE2A6490011140F /* LaunchScreen.xib in Resources */,
+				728BBEDB1AE2C782006FDFFB /* PersonCellView.xib in Resources */,
 				52DC1A341AE2A6490011140F /* Images.xcassets in Resources */,
 				728BBEA31AE2B965006FDFFB /* EventView.xib in Resources */,
 			);
@@ -233,6 +240,7 @@
 				52DC1A2F1AE2A6490011140F /* GroupMembersViewController.swift in Sources */,
 				52DC1A2B1AE2A6490011140F /* AppDelegate.swift in Sources */,
 				52DC1A2D1AE2A6490011140F /* EventTypesViewController.swift in Sources */,
+				728BBED91AE2C63E006FDFFB /* PersonCellView.swift in Sources */,
 				728BBEA51AE2B981006FDFFB /* EventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

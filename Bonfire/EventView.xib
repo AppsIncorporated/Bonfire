@@ -6,49 +6,37 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventView" customModule="Bonfire" customModuleProvider="target">
             <connections>
-                <outlet property="dateLabel" destination="YVc-QW-q7v" id="bVq-x2-jQz"/>
                 <outlet property="eventNameLabel" destination="Vl0-k2-5Vn" id="3as-hP-vKt"/>
-                <outlet property="personCollectionView" destination="MvO-tZ-rlK" id="FKO-N0-7YQ"/>
+                <outlet property="personCollectionView" destination="MvO-tZ-rlK" id="9PJ-bl-Z7S"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="-1" width="600" height="124"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="333"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vl0-k2-5Vn">
-                    <rect key="frame" x="8" y="8" width="334" height="21"/>
+                    <rect key="frame" x="8" y="8" width="197" height="21"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="334" id="bFA-3d-dUw"/>
+                        <constraint firstAttribute="width" constant="197" id="bFA-3d-dUw"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MvO-tZ-rlK">
-                    <rect key="frame" x="0.0" y="42" width="600" height="82"/>
+                    <rect key="frame" x="0.0" y="42" width="600" height="291"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yp3-nR-Wuw">
-                        <size key="itemSize" width="50" height="50"/>
+                        <size key="itemSize" width="117" height="163"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVc-QW-q7v">
-                    <rect key="frame" x="357" y="8" width="235" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="235" id="M2N-aH-hD4"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="YVc-QW-q7v" secondAttribute="trailing" constant="8" id="5gX-LJ-rkk"/>
                 <constraint firstItem="Vl0-k2-5Vn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Cmg-Lu-aIj"/>
-                <constraint firstItem="YVc-QW-q7v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="NWc-wk-BA4"/>
                 <constraint firstItem="MvO-tZ-rlK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SJ6-rP-DN0"/>
                 <constraint firstAttribute="trailing" secondItem="MvO-tZ-rlK" secondAttribute="trailing" id="h3G-mh-ZEv"/>
                 <constraint firstAttribute="bottom" secondItem="MvO-tZ-rlK" secondAttribute="bottom" id="sXh-fP-kfL"/>
@@ -56,7 +44,7 @@
                 <constraint firstItem="MvO-tZ-rlK" firstAttribute="top" secondItem="Vl0-k2-5Vn" secondAttribute="bottom" constant="13" id="zrM-Lq-bBS"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="413" y="239"/>
+            <point key="canvasLocation" x="413" y="343.5"/>
         </view>
     </objects>
 </document>
