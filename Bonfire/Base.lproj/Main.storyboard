@@ -51,7 +51,7 @@
         <!--Root View Controller-->
         <scene sceneID="SRl-Rl-AP1">
             <objects>
-                <tableViewController id="EJM-Bq-Hju" sceneMemberID="viewController">
+                <tableViewController id="EJM-Bq-Hju" customClass="GroupsTableViewController" customModule="Bonfire" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Rjp-GC-7H1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

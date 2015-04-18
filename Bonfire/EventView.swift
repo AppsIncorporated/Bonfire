@@ -12,6 +12,7 @@ import UIKit
 class EventView: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet var personCollectionView: UICollectionView!
     @IBOutlet var eventNameLabel: UILabel!
+    var groupEvent: GroupEvent!
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -45,7 +46,7 @@ class EventView: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
     //MARK: -- UICollectionViewDataSource
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10;
+        return groupEvent.users.count
     }
     
     // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
