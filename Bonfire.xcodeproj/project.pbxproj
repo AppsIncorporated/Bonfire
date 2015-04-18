@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52C9724A1AE2F6F1000C531A /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 52C972451AE2F6F1000C531A /* events.json */; };
+		52C9724B1AE2F6F1000C531A /* groups.json in Resources */ = {isa = PBXBuildFile; fileRef = 52C972461AE2F6F1000C531A /* groups.json */; };
+		52C9724C1AE2F6F1000C531A /* users_events.json in Resources */ = {isa = PBXBuildFile; fileRef = 52C972471AE2F6F1000C531A /* users_events.json */; };
+		52C9724D1AE2F6F1000C531A /* users_groups.json in Resources */ = {isa = PBXBuildFile; fileRef = 52C972481AE2F6F1000C531A /* users_groups.json */; };
+		52C9724E1AE2F6F1000C531A /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 52C972491AE2F6F1000C531A /* users.json */; };
+		52C972531AE2F70A000C531A /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9724F1AE2F70A000C531A /* Entity.swift */; };
+		52C972541AE2F70A000C531A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C972501AE2F70A000C531A /* Event.swift */; };
+		52C972551AE2F70A000C531A /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C972511AE2F70A000C531A /* Group.swift */; };
+		52C972561AE2F70A000C531A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C972521AE2F70A000C531A /* User.swift */; };
+		52C972581AE2F714000C531A /* NSJSONSerialization+NSData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C972571AE2F714000C531A /* NSJSONSerialization+NSData.swift */; };
 		52DC1A2B1AE2A6490011140F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC1A2A1AE2A6490011140F /* AppDelegate.swift */; };
 		52DC1A2D1AE2A6490011140F /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC1A2C1AE2A6490011140F /* EventTableViewController.swift */; };
 		52DC1A2F1AE2A6490011140F /* GroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC1A2E1AE2A6490011140F /* GroupTableViewController.swift */; };
@@ -33,6 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52C972451AE2F6F1000C531A /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = events.json; path = "../../bonfire-web/events.json"; sourceTree = "<group>"; };
+		52C972461AE2F6F1000C531A /* groups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = groups.json; path = "../../bonfire-web/groups.json"; sourceTree = "<group>"; };
+		52C972471AE2F6F1000C531A /* users_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users_events.json; path = "../../bonfire-web/users_events.json"; sourceTree = "<group>"; };
+		52C972481AE2F6F1000C531A /* users_groups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users_groups.json; path = "../../bonfire-web/users_groups.json"; sourceTree = "<group>"; };
+		52C972491AE2F6F1000C531A /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = "../../bonfire-web/users.json"; sourceTree = "<group>"; };
+		52C9724F1AE2F70A000C531A /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		52C972501AE2F70A000C531A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		52C972511AE2F70A000C531A /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		52C972521AE2F70A000C531A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		52C972571AE2F714000C531A /* NSJSONSerialization+NSData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSJSONSerialization+NSData.swift"; sourceTree = "<group>"; };
 		52DC1A251AE2A6490011140F /* Bonfire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bonfire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DC1A291AE2A6490011140F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52DC1A2A1AE2A6490011140F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +90,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52C972431AE2F6D5000C531A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				52C9724F1AE2F70A000C531A /* Entity.swift */,
+				52C972501AE2F70A000C531A /* Event.swift */,
+				52C972511AE2F70A000C531A /* Group.swift */,
+				52C972521AE2F70A000C531A /* User.swift */,
+				52C972451AE2F6F1000C531A /* events.json */,
+				52C972461AE2F6F1000C531A /* groups.json */,
+				52C972471AE2F6F1000C531A /* users_events.json */,
+				52C972481AE2F6F1000C531A /* users_groups.json */,
+				52C972491AE2F6F1000C531A /* users.json */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		52C972441AE2F6DD000C531A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52C972571AE2F714000C531A /* NSJSONSerialization+NSData.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		52DC1A1C1AE2A6490011140F = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				52DC1A4C1AE2A6760011140F /* UI */,
+				52C972431AE2F6D5000C531A /* Data */,
+				52C972441AE2F6DD000C531A /* Extensions */,
 				52DC1A281AE2A6490011140F /* Supporting Files */,
 				52DC1A331AE2A6490011140F /* Images.xcassets */,
 			);
@@ -221,11 +267,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C9724E1AE2F6F1000C531A /* users.json in Resources */,
+				52C9724D1AE2F6F1000C531A /* users_groups.json in Resources */,
 				728BBEDD1AE2F022006FDFFB /* EventTableViewCell.xib in Resources */,
 				52DC1A321AE2A6490011140F /* Main.storyboard in Resources */,
 				52DC1A371AE2A6490011140F /* LaunchScreen.xib in Resources */,
+				52C9724B1AE2F6F1000C531A /* groups.json in Resources */,
+				52C9724A1AE2F6F1000C531A /* events.json in Resources */,
 				728BBEDB1AE2C782006FDFFB /* PersonCellView.xib in Resources */,
 				52DC1A341AE2A6490011140F /* Images.xcassets in Resources */,
+				52C9724C1AE2F6F1000C531A /* users_events.json in Resources */,
 				728BBEA31AE2B965006FDFFB /* EventView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,11 +295,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C972551AE2F70A000C531A /* Group.swift in Sources */,
+				52C972541AE2F70A000C531A /* Event.swift in Sources */,
 				728BBEDF1AE2F03A006FDFFB /* EventTableViewCell.swift in Sources */,
 				52DC1A2F1AE2A6490011140F /* GroupTableViewController.swift in Sources */,
+				52C972531AE2F70A000C531A /* Entity.swift in Sources */,
 				52DC1A2B1AE2A6490011140F /* AppDelegate.swift in Sources */,
+				52C972581AE2F714000C531A /* NSJSONSerialization+NSData.swift in Sources */,
 				52DC1A2D1AE2A6490011140F /* EventTableViewController.swift in Sources */,
 				728BBED91AE2C63E006FDFFB /* PersonCellView.swift in Sources */,
+				52C972561AE2F70A000C531A /* User.swift in Sources */,
 				728BBEA51AE2B981006FDFFB /* EventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
