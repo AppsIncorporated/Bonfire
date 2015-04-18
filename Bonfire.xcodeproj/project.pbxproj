@@ -14,6 +14,8 @@
 		52DC1A341AE2A6490011140F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DC1A331AE2A6490011140F /* Images.xcassets */; };
 		52DC1A371AE2A6490011140F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DC1A351AE2A6490011140F /* LaunchScreen.xib */; };
 		52DC1A431AE2A6490011140F /* BonfireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC1A421AE2A6490011140F /* BonfireTests.swift */; };
+		728BBEA31AE2B965006FDFFB /* EventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728BBEA21AE2B965006FDFFB /* EventView.xib */; };
+		728BBEA51AE2B981006FDFFB /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728BBEA41AE2B981006FDFFB /* EventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		52DC1A3C1AE2A6490011140F /* BonfireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonfireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DC1A411AE2A6490011140F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52DC1A421AE2A6490011140F /* BonfireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonfireTests.swift; sourceTree = "<group>"; };
+		728BBEA21AE2B965006FDFFB /* EventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventView.xib; sourceTree = "<group>"; };
+		728BBEA41AE2B981006FDFFB /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +120,11 @@
 			isa = PBXGroup;
 			children = (
 				52DC1A2A1AE2A6490011140F /* AppDelegate.swift */,
+				52DC1A301AE2A6490011140F /* Main.storyboard */,
 				52DC1A2C1AE2A6490011140F /* EventTypesViewController.swift */,
 				52DC1A2E1AE2A6490011140F /* GroupMembersViewController.swift */,
-				52DC1A301AE2A6490011140F /* Main.storyboard */,
+				728BBEA21AE2B965006FDFFB /* EventView.xib */,
+				728BBEA41AE2B981006FDFFB /* EventView.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 				52DC1A321AE2A6490011140F /* Main.storyboard in Resources */,
 				52DC1A371AE2A6490011140F /* LaunchScreen.xib in Resources */,
 				52DC1A341AE2A6490011140F /* Images.xcassets in Resources */,
+				728BBEA31AE2B965006FDFFB /* EventView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +233,7 @@
 				52DC1A2F1AE2A6490011140F /* GroupMembersViewController.swift in Sources */,
 				52DC1A2B1AE2A6490011140F /* AppDelegate.swift in Sources */,
 				52DC1A2D1AE2A6490011140F /* EventTypesViewController.swift in Sources */,
+				728BBEA51AE2B981006FDFFB /* EventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +427,7 @@
 				52DC1A481AE2A6490011140F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52DC1A491AE2A6490011140F /* Build configuration list for PBXNativeTarget "BonfireTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +436,7 @@
 				52DC1A4B1AE2A6490011140F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
