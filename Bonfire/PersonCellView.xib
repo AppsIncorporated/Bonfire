@@ -7,10 +7,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="personCellView" id="UYY-FE-tcH" customClass="PersonCellView" customModule="Bonfire" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="117" height="163"/>
+            <rect key="frame" x="0.0" y="0.0" width="117" height="166"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="117" height="163"/>
+                <rect key="frame" x="0.0" y="0.0" width="117" height="166"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Yb-TQ-ucc">
@@ -19,9 +19,12 @@
                             <constraint firstAttribute="height" constant="117" id="Esa-Md-cy0"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stG-Er-N6E">
-                        <rect key="frame" x="-7" y="125" width="130" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="stG-Er-N6E">
+                        <rect key="frame" x="0.0" y="125" width="117" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="qkF-PR-gva"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -29,19 +32,19 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="stG-Er-N6E" secondAttribute="trailing" constant="-6" id="6FO-jw-H3y"/>
+                <constraint firstAttribute="trailing" secondItem="stG-Er-N6E" secondAttribute="trailing" id="6FO-jw-H3y"/>
                 <constraint firstAttribute="trailing" secondItem="0Yb-TQ-ucc" secondAttribute="trailing" id="FFA-gV-XdI"/>
                 <constraint firstItem="0Yb-TQ-ucc" firstAttribute="top" secondItem="UYY-FE-tcH" secondAttribute="top" id="M99-Mq-kTS"/>
-                <constraint firstItem="stG-Er-N6E" firstAttribute="leading" secondItem="UYY-FE-tcH" secondAttribute="leading" constant="-7" id="OSD-0a-M4E"/>
+                <constraint firstItem="stG-Er-N6E" firstAttribute="leading" secondItem="UYY-FE-tcH" secondAttribute="leading" id="OSD-0a-M4E"/>
                 <constraint firstItem="0Yb-TQ-ucc" firstAttribute="leading" secondItem="UYY-FE-tcH" secondAttribute="leading" id="TU5-mb-uJo"/>
                 <constraint firstItem="stG-Er-N6E" firstAttribute="top" secondItem="0Yb-TQ-ucc" secondAttribute="bottom" constant="8" id="VZG-Kc-RdY"/>
             </constraints>
-            <size key="customSize" width="118" height="185"/>
+            <size key="customSize" width="118" height="188"/>
             <connections>
                 <outlet property="name" destination="stG-Er-N6E" id="kUl-4f-J9i"/>
                 <outlet property="personImage" destination="0Yb-TQ-ucc" id="tPi-Fz-QIh"/>
             </connections>
-            <point key="canvasLocation" x="387.5" y="206.5"/>
+            <point key="canvasLocation" x="387.5" y="208"/>
         </collectionViewCell>
     </objects>
 </document>

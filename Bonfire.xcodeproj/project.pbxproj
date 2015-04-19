@@ -32,6 +32,8 @@
 		728BBEDD1AE2F022006FDFFB /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728BBEDC1AE2F022006FDFFB /* EventTableViewCell.xib */; };
 		728BBEDF1AE2F03A006FDFFB /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728BBEDE1AE2F03A006FDFFB /* EventTableViewCell.swift */; };
 		72AC635F1AE30DAB00B8EEDA /* GroupEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC635E1AE30DAB00B8EEDA /* GroupEvent.swift */; };
+		72AC63631AE33D9B00B8EEDA /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC63621AE33D9B00B8EEDA /* EventDetailViewController.swift */; };
+		72AC63651AE33F7000B8EEDA /* UIViewController+navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC63641AE33F7000B8EEDA /* UIViewController+navigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		728BBEDC1AE2F022006FDFFB /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		728BBEDE1AE2F03A006FDFFB /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		72AC635E1AE30DAB00B8EEDA /* GroupEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupEvent.swift; sourceTree = "<group>"; };
+		72AC63621AE33D9B00B8EEDA /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		72AC63641AE33F7000B8EEDA /* UIViewController+navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+navigation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				52C972571AE2F714000C531A /* NSJSONSerialization+NSData.swift */,
+				72AC63641AE33F7000B8EEDA /* UIViewController+navigation.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 		52DC1A271AE2A6490011140F /* Bonfire */ = {
 			isa = PBXGroup;
 			children = (
+				52DC1A2A1AE2A6490011140F /* AppDelegate.swift */,
 				52DC1A4C1AE2A6760011140F /* UI */,
 				52C972431AE2F6D5000C531A /* Data */,
 				52C972591AE30F83000C531A /* images */,
@@ -179,7 +185,6 @@
 		52DC1A4C1AE2A6760011140F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				52DC1A2A1AE2A6490011140F /* AppDelegate.swift */,
 				52DC1A301AE2A6490011140F /* Main.storyboard */,
 				52DC1A2C1AE2A6490011140F /* EventTableViewController.swift */,
 				52DC1A2E1AE2A6490011140F /* GroupTableViewController.swift */,
@@ -189,6 +194,7 @@
 				728BBEDA1AE2C782006FDFFB /* PersonCellView.xib */,
 				728BBEDE1AE2F03A006FDFFB /* EventTableViewCell.swift */,
 				728BBEDC1AE2F022006FDFFB /* EventTableViewCell.xib */,
+				72AC63621AE33D9B00B8EEDA /* EventDetailViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -302,9 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72AC63651AE33F7000B8EEDA /* UIViewController+navigation.swift in Sources */,
 				52C972551AE2F70A000C531A /* Group.swift in Sources */,
 				52C972541AE2F70A000C531A /* Event.swift in Sources */,
 				728BBEDF1AE2F03A006FDFFB /* EventTableViewCell.swift in Sources */,
+				72AC63631AE33D9B00B8EEDA /* EventDetailViewController.swift in Sources */,
 				52DC1A2F1AE2A6490011140F /* GroupTableViewController.swift in Sources */,
 				52C972531AE2F70A000C531A /* Entity.swift in Sources */,
 				52DC1A2B1AE2A6490011140F /* AppDelegate.swift in Sources */,

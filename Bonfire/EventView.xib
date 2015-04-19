@@ -16,11 +16,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vl0-k2-5Vn">
-                    <rect key="frame" x="8" y="8" width="197" height="21"/>
+                    <rect key="frame" x="8" y="8" width="572" height="15"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="197" id="bFA-3d-dUw"/>
+                        <constraint firstAttribute="width" constant="572" id="bFA-3d-dUw"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -37,11 +37,12 @@
             </subviews>
             <constraints>
                 <constraint firstItem="Vl0-k2-5Vn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Cmg-Lu-aIj"/>
+                <constraint firstAttribute="trailing" secondItem="Vl0-k2-5Vn" secondAttribute="trailing" constant="20" id="NfK-NM-cYC"/>
                 <constraint firstItem="MvO-tZ-rlK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SJ6-rP-DN0"/>
                 <constraint firstAttribute="trailing" secondItem="MvO-tZ-rlK" secondAttribute="trailing" id="h3G-mh-ZEv"/>
                 <constraint firstAttribute="bottom" secondItem="MvO-tZ-rlK" secondAttribute="bottom" id="sXh-fP-kfL"/>
                 <constraint firstItem="Vl0-k2-5Vn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="zoA-0T-1lO"/>
-                <constraint firstItem="MvO-tZ-rlK" firstAttribute="top" secondItem="Vl0-k2-5Vn" secondAttribute="bottom" constant="13" id="zrM-Lq-bBS"/>
+                <constraint firstItem="MvO-tZ-rlK" firstAttribute="top" secondItem="Vl0-k2-5Vn" secondAttribute="bottom" constant="19" id="zrM-Lq-bBS"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="413" y="295"/>
