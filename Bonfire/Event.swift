@@ -27,6 +27,10 @@ class Event: GroupEvent {
         }
         return users
     }
+    
+    override func getName() -> String {
+        return name!
+    }
         
     class func loadData() {
         loadEvents()

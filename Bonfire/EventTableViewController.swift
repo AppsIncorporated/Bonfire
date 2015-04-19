@@ -25,6 +25,19 @@ class EventTableViewController: UITableViewController {
 //            arrayedEvents[section][numArray[section]] = events[i]
 //            numArray[section]++
 //        }
+        self.navigationItem.title = "Events"
+        var searchButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Search, target: self, action: "searchAndFilterPage:")
+        var addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: "add:")
+        self.navigationItem.rightBarButtonItems = [searchButton, addButton]
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Mine", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+    }
+    
+    func add(sender: AnyObject) {
+        let createEventViewController = CreateEventViewController.createInstance()
+        navigationController?.pushViewController(createEventViewController, animated: true)
+    }
+    
+    func searchAndFilterPage() {
         
     }
 
@@ -48,9 +61,10 @@ class EventTableViewController: UITableViewController {
         eventDetailViewController.eventView.groupEvent = eventsss[indexPath.item]
         eventDetailViewController.eventView.eventNameLabel.text = "People Going"
         var dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "hh:mm" //format style. Browse online to get a format that fits your needs.
+        dateFormatter.dateFormat = "dd hh:mm" //format style. Browse online to get a format that fits your needs.
         var dateString = dateFormatter.stringFromDate(events[indexPath.item].start!)
-        eventDetailViewController.dateLabel.text = dateString
+        eventDetailViewController.dateLabel.text = "When: April \(dateString) pm"
+        eventDetailViewController.eventTitle.text = eventsss[indexPath.item].name
         navigationController?.pushViewController(eventDetailViewController, animated: true)
     }
     

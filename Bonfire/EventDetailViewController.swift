@@ -12,6 +12,12 @@ import UIKit
 class EventDetailViewController: UIViewController {
     @IBOutlet var eventView: EventView!
     @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var eventTitle: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: nil)
+    }
     
     class func createInstance() -> EventDetailViewController {
         return createInstanceFromStoryboardName("Main", storyboardId: "eventDetailViewController") as! EventDetailViewController

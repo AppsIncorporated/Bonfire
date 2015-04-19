@@ -13,6 +13,10 @@ class User: Entity {
     var email: String?
     var image: UIImage?
     
+    override func getName() -> String {
+        return name!
+    }
+    
     class func loadData() {
         let path = NSBundle.mainBundle().pathForResource("users", ofType: "json", inDirectory: nil)
         let usersData = NSJSONSerialization.loadFromPath(path!, error: nil) as! [[String: AnyObject]]

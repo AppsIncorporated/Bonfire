@@ -34,6 +34,12 @@
 		72AC635F1AE30DAB00B8EEDA /* GroupEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC635E1AE30DAB00B8EEDA /* GroupEvent.swift */; };
 		72AC63631AE33D9B00B8EEDA /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC63621AE33D9B00B8EEDA /* EventDetailViewController.swift */; };
 		72AC63651AE33F7000B8EEDA /* UIViewController+navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC63641AE33F7000B8EEDA /* UIViewController+navigation.swift */; };
+		72AC63671AE3603F00B8EEDA /* GroupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC63661AE3603F00B8EEDA /* GroupDetailViewController.swift */; };
+		72AC63691AE3713800B8EEDA /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC63681AE3713800B8EEDA /* CreateEventViewController.swift */; };
+		72AC636B1AE3790700B8EEDA /* GroupInvite.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72AC636A1AE3790700B8EEDA /* GroupInvite.xib */; };
+		72AC636D1AE37AA500B8EEDA /* GroupInviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC636C1AE37AA500B8EEDA /* GroupInviteViewController.swift */; };
+		72AC636F1AE37D3100B8EEDA /* GroupInvite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC636E1AE37D3100B8EEDA /* GroupInvite.swift */; };
+		72AC63711AE38CF200B8EEDA /* AddGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC63701AE38CF200B8EEDA /* AddGroupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +84,12 @@
 		72AC635E1AE30DAB00B8EEDA /* GroupEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupEvent.swift; sourceTree = "<group>"; };
 		72AC63621AE33D9B00B8EEDA /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		72AC63641AE33F7000B8EEDA /* UIViewController+navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+navigation.swift"; sourceTree = "<group>"; };
+		72AC63661AE3603F00B8EEDA /* GroupDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupDetailViewController.swift; sourceTree = "<group>"; };
+		72AC63681AE3713800B8EEDA /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		72AC636A1AE3790700B8EEDA /* GroupInvite.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupInvite.xib; sourceTree = "<group>"; };
+		72AC636C1AE37AA500B8EEDA /* GroupInviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupInviteViewController.swift; sourceTree = "<group>"; };
+		72AC636E1AE37D3100B8EEDA /* GroupInvite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupInvite.swift; sourceTree = "<group>"; };
+		72AC63701AE38CF200B8EEDA /* AddGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +207,12 @@
 				728BBEDE1AE2F03A006FDFFB /* EventTableViewCell.swift */,
 				728BBEDC1AE2F022006FDFFB /* EventTableViewCell.xib */,
 				72AC63621AE33D9B00B8EEDA /* EventDetailViewController.swift */,
+				72AC63661AE3603F00B8EEDA /* GroupDetailViewController.swift */,
+				72AC63681AE3713800B8EEDA /* CreateEventViewController.swift */,
+				72AC636A1AE3790700B8EEDA /* GroupInvite.xib */,
+				72AC636C1AE37AA500B8EEDA /* GroupInviteViewController.swift */,
+				72AC636E1AE37D3100B8EEDA /* GroupInvite.swift */,
+				72AC63701AE38CF200B8EEDA /* AddGroupViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -290,6 +308,7 @@
 				728BBEDB1AE2C782006FDFFB /* PersonCellView.xib in Resources */,
 				52DC1A341AE2A6490011140F /* Images.xcassets in Resources */,
 				52C9724C1AE2F6F1000C531A /* users_events.json in Resources */,
+				72AC636B1AE3790700B8EEDA /* GroupInvite.xib in Resources */,
 				728BBEA31AE2B965006FDFFB /* EventView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +328,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				72AC63651AE33F7000B8EEDA /* UIViewController+navigation.swift in Sources */,
+				72AC63691AE3713800B8EEDA /* CreateEventViewController.swift in Sources */,
+				72AC636F1AE37D3100B8EEDA /* GroupInvite.swift in Sources */,
 				52C972551AE2F70A000C531A /* Group.swift in Sources */,
 				52C972541AE2F70A000C531A /* Event.swift in Sources */,
 				728BBEDF1AE2F03A006FDFFB /* EventTableViewCell.swift in Sources */,
@@ -317,6 +338,9 @@
 				52C972531AE2F70A000C531A /* Entity.swift in Sources */,
 				52DC1A2B1AE2A6490011140F /* AppDelegate.swift in Sources */,
 				72AC635F1AE30DAB00B8EEDA /* GroupEvent.swift in Sources */,
+				72AC63671AE3603F00B8EEDA /* GroupDetailViewController.swift in Sources */,
+				72AC63711AE38CF200B8EEDA /* AddGroupViewController.swift in Sources */,
+				72AC636D1AE37AA500B8EEDA /* GroupInviteViewController.swift in Sources */,
 				52C972581AE2F714000C531A /* NSJSONSerialization+NSData.swift in Sources */,
 				52DC1A2D1AE2A6490011140F /* EventTableViewController.swift in Sources */,
 				728BBED91AE2C63E006FDFFB /* PersonCellView.swift in Sources */,

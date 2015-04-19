@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         NSThread.sleepForTimeInterval(1.2)
-        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 255.0, green: 49.0, blue: 58.0, alpha: 1.0)
         // Override point for customization after application launch.
         User.loadData()
         Group.loadData()

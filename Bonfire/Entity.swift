@@ -30,6 +30,10 @@ class Entity: NSObject {
         }
     }
     
+    func getName() -> String {
+        return ""
+    }
+    
     class func matching(matcher: (Entity)->Bool) -> [Entity] {
         var matches: [Entity] = []
         for entity in self.all {
