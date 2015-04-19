@@ -43,6 +43,7 @@ class EventTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let eventDetailViewController = EventDetailViewController.createInstance()
+        let view = eventDetailViewController.view
         var eventsss = Event.all as! [Event]
         eventDetailViewController.eventView.groupEvent = eventsss[indexPath.item]
         eventDetailViewController.eventView.eventNameLabel.text = "People Going"
