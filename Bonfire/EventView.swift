@@ -12,7 +12,11 @@ import UIKit
 class EventView: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet var personCollectionView: UICollectionView!
     @IBOutlet var eventNameLabel: UILabel!
-    var groupEvent: GroupEvent!
+    var groupEvent: GroupEvent! {
+        didSet {
+            personCollectionView.reloadData()
+        }
+    }
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -24,10 +28,6 @@ class EventView: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
         
         let cellNib = UINib(nibName: "PersonCellView", bundle: nil)
         personCollectionView.registerNib(cellNib, forCellWithReuseIdentifier: "personCellView")
-//        let flowLayout = UICollectionViewFlowLayout()
-//        personCollectionView.setCollectionViewLayout(flowLayout, animated: false)
-
-        eventNameLabel.text = "Bob's Volunteering Event"
         personCollectionView.dataSource = self
         personCollectionView.delegate = self
     }
@@ -52,9 +52,8 @@ class EventView: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
     // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = personCollectionView.dequeueReusableCellWithReuseIdentifier("personCellView", forIndexPath: indexPath) as! PersonCellView
-        cell.personImage.image = UIImage(named: "charles")
-        cell.name.text = "charles barkley"
-        cell.name.font = cell.name.font.fontWithSize(15)
+        cell.personImage.image = groupEvent.users[indexPath.item].image
+        cell.name.text = groupEvent.users[indexPath.item].name
         return cell
     }
 

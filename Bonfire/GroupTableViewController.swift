@@ -36,6 +36,7 @@ class GroupsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("eventTableViewCell") as! EventTableViewCell
         cell.eventView.groupEvent = groups[indexPath.item]
+        cell.eventView.eventNameLabel.text = groups[indexPath.item].name
         return cell
     }
 
